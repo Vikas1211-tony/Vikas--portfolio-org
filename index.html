@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas Madgula — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">VM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('menu-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div class="hero-label">AI / ML ENGINEER &amp; FULL STACK DEVELOPER</div>
+      <h1 class="hero-name">Vikas<br /><em>Madgula</em></h1>
+      <p class="hero-sub">Building intelligent systems — from LLM-powered agents and RAG pipelines to production-grade full-stack applications.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">85%+</span><span class="stat-l">Model accuracy</span></div>
+        <div class="stat"><span class="stat-n">99%</span><span class="stat-l">Uptime AWS systems</span></div>
+        <div class="stat"><span class="stat-n">2400+</span><span class="stat-l">Hackathon participants</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="code-window">
+        <div class="code-bar"><span></span><span></span><span></span></div>
+        <pre class="code-body"><code><span class="c-kw">from</span> <span class="c-mod">langchain</span> <span class="c-kw">import</span> agent
+<span class="c-kw">from</span> <span class="c-mod">openai</span> <span class="c-kw">import</span> embeddings
+
+<span class="c-fn">pipeline</span> = RAGPipeline(
+  <span class="c-str">model</span>=<span class="c-val">"gpt-4o"</span>,
+  <span class="c-str">retriever</span>=VectorStore(),
+  <span class="c-str">accuracy</span>=<span class="c-val">0.78</span>
+)
+
+<span class="c-fn">result</span> = pipeline.<span class="c-fn">run</span>(query)
+<span class="c-cm"># 78% directional accuracy</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-tag">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>AI engineer who ships.</h2>
+          <p>I'm Vikas, an AI/ML engineer based in Hyderabad with a deep focus on Generative AI, LLM-powered applications, and agentic workflows. I bridge the gap between cutting-edge AI research and production systems that actually work at scale.</p>
+          <p>My background spans backend engineering (Python, Java, FastAPI), cloud infrastructure (AWS Lambda, serverless architectures), and ML pipelines (LangChain, RAG, vector databases). I've shipped systems that run at 99% uptime and models that detect emotions with 85%+ accuracy.</p>
+          <p>Completed advanced MS-level coursework in Computer Science (AI/ML, Cloud Computing, Cybersecurity) at University of Central Missouri, GPA 3.35/4.0. Open to full-time roles and collaborations.</p>
+          <div class="about-links">
+            <a href="mailto:vikasmadgula123@gmail.com" class="pill-link">✉ vikasmadgula123@gmail.com</a>
+            <a href="tel:+918523827396" class="pill-link">📞 +91 85238 27396</a>
+            <span class="pill-link">📍 Hyderabad · Open to relocate</span>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="aside-card">
+            <div class="aside-icon">🎓</div>
+            <div>
+              <div class="aside-title">MS Computer Science</div>
+              <div class="aside-sub">Univ. of Central Missouri · GPA 3.35</div>
+            </div>
+          </div>
+          <div class="aside-card">
+            <div class="aside-icon">🎓</div>
+            <div>
+              <div class="aside-title">B.Tech CSE — First Class</div>
+              <div class="aside-sub">GNITC, Hyderabad · 2023</div>
+            </div>
+          </div>
+          <div class="aside-card">
+            <div class="aside-icon">🏆</div>
+            <div>
+              <div class="aside-title">Hackathon Organizer</div>
+              <div class="aside-sub">2400+ participants, 500+ teams</div>
+            </div>
+          </div>
+          <div class="aside-card">
+            <div class="aside-icon">🌐</div>
+            <div>
+              <div class="aside-title">Languages</div>
+              <div class="aside-sub">English · Telugu · Hindi · German (learning)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-tag">02 — Skills</div>
+      <h2>Technical expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-label">AI / ML / GenAI</div>
+          <div class="skill-tags">
+            <span>LLMs</span><span>LangChain</span><span>OpenAI API</span><span>RAG Pipelines</span>
+            <span>Agentic Workflows</span><span>Prompt Engineering</span><span>Vector DBs</span>
+            <span>TensorFlow</span><span>PyTorch</span><span>ResNet-50</span><span>VGG-16</span>
+            <span>LSTM</span><span>OpenCV</span><span>Claude API</span><span>Gemini API</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-tags">
+            <span class="tag-strong">Python</span><span>Java</span><span>C++</span><span>C#</span>
+            <span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>R</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Cloud &amp; Backend</div>
+          <div class="skill-tags">
+            <span>FastAPI</span><span>Flask</span><span>AWS Lambda</span><span>EC2</span>
+            <span>S3</span><span>DynamoDB</span><span>API Gateway</span><span>Azure</span>
+            <span>Microservices</span><span>Serverless</span><span>.NET</span><span>PySpark</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Frontend &amp; DevOps</div>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>Docker</span><span>Git</span>
+            <span>CI/CD</span><span>Selenium</span><span>MySQL</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+      <div class="certs">
+        <div class="certs-label">Certifications</div>
+        <div class="cert-list">
+          <span class="cert">GenAI for Project Managers — PMI</span>
+          <span class="cert">Applied AI Workshop — BE10X</span>
+          <span class="cert">Python &amp; Data Structures — University of Michigan (Coursera)</span>
+          <span class="cert">Digital 101 — NASSCOM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-tag">03 — Projects</div>
+      <h2>Key projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-meta"><span class="proj-tag">GenAI</span><span class="proj-tag">LangChain</span><span class="proj-tag">OpenAI</span></div>
+          <h3>AI Resume Screening Pipeline</h3>
+          <p>LangChain + OpenAI-powered pipeline that reduced manual screening time by 60% and improved shortlisting accuracy by 40%. Presented to stakeholders with explainable model outputs.</p>
+          <div class="project-stats">
+            <span>60% faster screening</span>
+            <span>40% accuracy boost</span>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-meta"><span class="proj-tag">RAG</span><span class="proj-tag">Vector DB</span><span class="proj-tag">NLP</span></div>
+          <h3>RAG-Based Market Analytics</h3>
+          <p>Real-time market insights engine using retrieval-augmented generation with vector similarity search and efficient indexing for sub-second inference.</p>
+          <div class="project-stats">
+            <span>78% directional accuracy</span>
+            <span>Real-time inference</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta"><span class="proj-tag">Computer Vision</span><span class="proj-tag">ResNet-50</span></div>
+          <h3>Emotion Recognition System</h3>
+          <p>Real-time emotion detection using ResNet-50 and OpenCV across 7 emotion classes.</p>
+          <div class="project-stats"><span>85% accuracy</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta"><span class="proj-tag">Transfer Learning</span><span class="proj-tag">VGG-16</span></div>
+          <h3>Memory Deterioration Detection</h3>
+          <p>Transfer learning on medical MRI images for early-stage Alzheimer's/dementia detection.</p>
+          <div class="project-stats"><span>+17.7% detection accuracy</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta"><span class="proj-tag">AWS</span><span class="proj-tag">Serverless</span><span class="proj-tag">TypeScript</span></div>
+          <h3>Restaurant Reservation System</h3>
+          <p>Full-stack serverless app — TypeScript/HTML/CSS frontend, Python/Flask backend on AWS Lambda + DynamoDB.</p>
+          <div class="project-stats"><span>99% uptime</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta"><span class="proj-tag">NLP</span><span class="proj-tag">LSTM</span><span class="proj-tag">TensorFlow</span></div>
+          <h3>Predictive Text Generator</h3>
+          <p>NLP text generation using TensorFlow and LSTM networks. Hands-on work with computational graphs and ML workflows.</p>
+          <div class="project-stats"><span>30% prediction accuracy gain</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-tag">04 — Experience</div>
+      <h2>Where I've worked</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Independent AI/ML Developer &amp; Researcher</div>
+                <div class="tl-company">Freelance &amp; Open Source</div>
+              </div>
+              <div class="tl-date">May 2023 – Present</div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Built AI-powered resume screening pipeline (LangChain + OpenAI) reducing manual screening time by 60% and improving shortlisting accuracy by 40%.</li>
+              <li>Designed RAG-based analytics solution achieving 78% directional accuracy via vector similarity search and efficient indexing.</li>
+              <li>Built and deployed GenAI applications using OpenAI, Gemini, and Claude APIs with RAG pipelines and agent-based workflows.</li>
+              <li>Completed advanced MS coursework in AI/ML, Cloud Computing, and Cybersecurity (GPA: 3.35/4.0).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Software Engineer &amp; Cybersecurity Analyst</div>
+                <div class="tl-company">RAM Infotecs</div>
+              </div>
+              <div class="tl-date">May 2021 – Apr 2024 · Remote</div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Engineered secure and scalable backend services in Java and Spring Boot achieving 15% performance improvement via query optimisation and caching.</li>
+              <li>Built RESTful APIs with rigorous input validation across 5+ microservices; developed JS/HTML/CSS dashboards for security metrics reporting.</li>
+              <li>Automated penetration testing workflows in Python, cutting manual effort by 20%; resolved 10+ critical security gaps using Wireshark and Nmap.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-sm"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Hackathon Organizer &amp; Lead Coordinator</div>
+                <div class="tl-company">Leadership</div>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Led end-to-end organization of multiple hackathons with 2,400+ participants and 500+ teams.</li>
+              <li>Managed organizers and volunteers; coordinated across faculty, sponsors, and mentors.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="section-inner">
+      <div class="section-tag">05 — Blog</div>
+      <h2>Writing</h2>
+      <div id="blog-posts" class="blog-grid">
+        <div class="blog-loading">Loading posts…</div>
+      </div>
+      <div class="blog-empty" id="blog-empty" style="display:none">
+        <p>Posts coming soon. Check back or <a href="#contact">get in touch</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-tag">06 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2>Let's build something.</h2>
+          <p>Open to full-time roles, freelance projects, and research collaborations in AI/ML and full-stack development. Based in Hyderabad, open to relocate.</p>
+          <div class="contact-links">
+            <a href="mailto:vikasmadgula123@gmail.com" class="contact-link">
+              <span class="cl-icon">✉</span>
+              <span>vikasmadgula123@gmail.com</span>
+            </a>
+            <a href="tel:+918523827396" class="contact-link">
+              <span class="cl-icon">📞</span>
+              <span>+91 85238 27396</span>
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" onsubmit="submitContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Send message</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="nav-logo">VM<span class="dot">.</span></span>
+      <span>© 2025 Vikas Madgula · Hyderabad, India</span>
+      <span>Built with FastAPI &amp; HTML/CSS</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
