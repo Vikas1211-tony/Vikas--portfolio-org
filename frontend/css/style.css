@@ -382,3 +382,20 @@ footer {
   }
   body.menu-open .nav-links a { font-size: 1.2rem; }
 }
+/* ── Profile Headshot Styling ─────────────────── */
+.profile-image-container {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-headshot {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: var(--r2);
+  border: 1px solid var(--border2);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
