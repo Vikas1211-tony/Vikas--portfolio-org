@@ -392,10 +392,11 @@ footer {
 
 .profile-headshot {
   width: 100%;
-  max-width: 360px;
-  height: auto;
+  max-width: 280px;
+  height: 320px;            /* Forces a clean height boundary */
   border-radius: var(--r2);
   border: 1px solid var(--border2);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-  object-fit: cover;
+  object-fit: cover;        /* Prevents the image from stretching out */
+  object-position: top center; /* Keeps your face perfectly centered */
 }
